@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technology Startup Ideas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+    #idea-box {
+      width: 50%;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    #idea {
+      font-size: 24px;
+      color: #333;
+      margin-top: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showIdea() {
+      var ideas = [
+        "AI-powered personal assistant app",
+        "Automated home management system",
+        "Cloud-based project management tool",
+        "Augmented Reality e-commerce platform",
+        "Online education platform with virtual reality classrooms",
+        "Smart agriculture system using IoT",
+        "Health monitoring wearables and telemedicine platform",
+        "Blockchain-based supply chain management system"
+      ];
+      var randomIndex = Math.floor(Math.random() * ideas.length);
+      document.getElementById("idea").innerHTML = ideas[randomIndex];
+    }
+  </script>
+</head>
+<body onload="showIdea()">
+  <h1>Technology Startup Ideas</h1>
+  <div id="idea-box">
+    <p id="idea"></p>
+  </div>
+  <button onclick="showIdea()">Regenerate</button>
+</body>
+</html>
