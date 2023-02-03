@@ -4,53 +4,67 @@
   <head>
     <title>Idea Generator</title>
     <style>
-   body {
-			font-family: Arial, sans-serif;
-			padding: 30px;
-			background-image: url("bg.jpg");
-			background-size: cover;
-			}
+  body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-image: url("bg.jpg");
+        background-size: cover;
+      }
 
-h1 {
-		text-align: center;
-		font-size: 36px;
-		margin-bottom: 30px;
-		text-shadow: 2px 2px 3px rgb(0, 0, 0);
-		}
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+      }
 
-form {
-		text-align: center;
-		background-color: rgba(255, 255, 255, 0.7);
-		border-radius: 20px;
-		box-shadow: 2px 2px 5px rgb(0, 0, 0);
-		padding: 20px;
-		}
+      form {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        padding: 20px;
+        flex-direction: column;
+      }
 
-select,
-textarea {
-		font-size: 18px;
-		padding: 10px;
-		margin-bottom: 20px;
-		border-radius: 10px;
-		border: 1px solid rgb(0, 128, 0);
-		}
+      select,
+      textarea {
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 128, 0);
+      }
 
-button[type="submit"] {
-					background-color: rgb(0, 128, 0);
-					color: white;
-					padding: 10px 20px;
-					border-radius: 5px;
-					cursor: pointer;
-					border: none;
-					font-size: 18px;
-					margin-top: 20px;
-					transition: background-color 0.2s ease;
-					box-shadow: 2px 2px 5px rgb(0, 0, 0);
-					}
+      button[type="submit"] {
+        background-color: rgb(0, 128, 0);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        margin-top: 20px;
+        transition: background-color 0.2s ease;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+      }
 
-button[type="submit"]:hover {
-			background-color: rgb(53, 94, 59);
-			}
+      button[type="submit"]:hover {
+        background-color: rgb(53, 94, 59);
+      }
+      
+      button{
+        background-color: rgb(0, 128, 0);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        margin-top: 20px;
+        transition: background-color 0.2s ease;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+      }
 </style>
 
   </head>
@@ -89,23 +103,23 @@ button[type="submit"]:hover {
         <button type="submit">Submit</button>
       </form>
     </div>
-    <div id="ideaList" style="display: none;">
-      <h1>Get an Idea</h1>
-      <form>
-        <label for="interest">Select an Interest:</label>
-        <select id="interest">
-          <option value="">Select an Interest</option>
-          <option value="technology">Technology</option>
-          <option value="education">Education</option>
-          <option value="entertainment">Entertainment</option>
-          <option value="fitness">Fitness</option>
-          <option value="food">Food</option>
-          <option value="other">Other</option>
-        </select>
-        <br><br>
-        <button type="submit">Get Idea</button>
-      </form>
-    </div>
+   <div id="ideaList" style="display: none;">
+  <h1>Get an Idea</h1>
+  <form>
+    <label for="interest">Select an Interest:</label>
+    <select id="interest">
+      <option value="">Select an Interest</option>
+      <option value="technology">Technology</option>
+      <option value="education">Education</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="fitness">Fitness</option>
+      <option value="food">Food</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+    <button type="button" onclick="redirectPage(document.getElementById('interest').value)">Get an Idea</button>
+  </form>
+</div>
     <script>
       document.querySelector('form').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -126,4 +140,32 @@ button[type="submit"]:hover {
     ideaList.style.display = 'block';
   }
 });
+      
+      function redirectPage(selectedOption) {
+    	    switch(selectedOption) {
+    	      case "technology":
+    	        window.location.href = "technology.html";
+    	        break;
+    	      case "education":
+    	        window.location.href = "education.html";
+    	        break;
+    	      case "entertainment":
+    	        window.location.href = "entertainment.html";
+    	        break;
+    	      case "fitness":
+    	        window.location.href = "fitness.html";
+    	        break;
+    	      case "food":
+    	        window.location.href = "food.html";
+    	        break;
+    	      case "other":
+    	        window.location.href = "other.html";
+    	        break;
+    	      default:
+    	        window.location.href = "index.html";
+    	    }
+    	  }
+
+
+
 </script>
