@@ -57,4 +57,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Acknowledgements
 
-This project was created by ['Mohammed Saqlain'](./https://github.com/Saqlain-qark). Special thanks to Kunal Chandra Kar and Mayank Kumar for their contributions to the project.
+This project was created by [`Mohammed Saqlain`](./https://github.com/Saqlain-qark). Special thanks to `Kunal Chandra Kar` and `Mayank Kumar` for their contributions to the project.
