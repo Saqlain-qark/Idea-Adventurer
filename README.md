@@ -26,6 +26,30 @@ Once you have the repository cloned, you can open any of the HTML files in your 
 
 If you would like to contribute to this project, you can fork the repository and make your changes on your own fork. Once you have made your changes, you can create a pull request to merge your changes back into the main repository.
 
+1.Create a new branch: 
+```bash 
+git branch my-new-feature
+```
+
+2.Switch to the new branch: 
+```bash 
+git checkout my-new-feature
+```
+
+3.Make changes to the code as desired.
+
+4.Commit the changes to your local repository: 
+```bash 
+git add .
+git commit -m "Your commit message here"
+```
+
+5.Push the changes to the remote repository: 
+```bash 
+git push origin my-new-feature
+```
+
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
