@@ -6,11 +6,11 @@ This project is a website called "Idea Adventurer" that provides educational and
 
 This repository contains the following files:
 
-- `education.html`: A web page that displays educational resources for users.
-- `homepage.html`: The main web page for the "Idea Adventurer" website.
-- `ideaadventurer.jsp`: A server-side web page that handles user authentication and login.
-- `signup.html`: A web page that allows users to sign up for an account on the website.
-- `technology.html`: A web page that displays technological resources for users.
+- [`education.html`](./education.html): A web page that displays educational resources for users.
+- [`homepage.html`](./homepage.html): The main web page for the "Idea Adventurer" website.
+- [`ideaadventurer.jsp`](./ideaadventurer.jsp): A server-side web page that handles user authentication and login.
+- [`signup.html`](./signup.html): A web page that allows users to sign up for an account on the website.
+- [`technology.html`](./technology.html): A web page that displays technological resources for users.
 
 ## Getting Started
 
@@ -50,10 +50,11 @@ git commit -m "Your commit message here"
 git push origin my-new-feature
 ```
 8. Create a pull request by clicking the "New pull request" button on the main repository page and selecting your forked repository and the branch with your changes.
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Acknowledgements
 
-This project was created by [Your Name Here]. Special thanks to [Contributor Names Here] for their contributions to the project.
+This project was created by ['Mohammed Saqlain'](./https://github.com/Saqlain-qark). Special thanks to Kunal Chandra Kar and Mayank Kumar for their contributions to the project.
