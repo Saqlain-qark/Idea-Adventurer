@@ -1,2 +1,2 @@
 # Idea-Adventurer
-Provide Startup for Ideas
+Provide Ideas for Startup
